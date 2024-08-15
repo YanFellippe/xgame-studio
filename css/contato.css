@@ -8,13 +8,14 @@
 .btn{
     margin: 10px;
     padding: 10px 20px;
-    background-color: #c2db34;
+    background-color: #4FD1C5;
     color: #fff;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 15px;
 
     &:hover{
-        background-color: rgb(219, 191, 149);
+        background-color: #1F3B4D;
     }
 }
