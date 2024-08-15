@@ -1,0 +1,20 @@
+#formulario{
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #c2db34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: rgb(219, 191, 149);
+    }
+}
