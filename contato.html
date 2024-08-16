@@ -24,14 +24,46 @@
 
 <main>
     <form id="formulario">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required placeholder="ex: luan gameplay"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" required placeholder="ex: sou muito burro e não sei usar o site"></textarea><br>
-        <input class="btn" type="submit" value="Enviar">
-    </form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartilhe seu email com outras pessoas.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Manter conectado</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmar</button>
+      </form>
+
+      <form id="problemas">
+        <fieldset disabled>
+          <legend class="legend">Formulário de problemas</legend>
+          <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Digite o problema</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Tipos de problemas</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Tipos de problemas</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Enviar formulário para Email pessoal
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+      </form>
 </main>
 <footer>
     <p>2024 XGame Studio. Todos os direitos reservados.</p>

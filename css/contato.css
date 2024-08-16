@@ -1,12 +1,19 @@
 #formulario{
-    border-radius: 15px;
+    margin: 5px;
+    border-radius: 20px;
     border: 1px solid black;
     text-align: center;
     justify-content: center;
+    
+}
+
+.mb-3{
+    margin: 5px;
+    color: black;
 }
 
 .btn{
-    margin: 10px;
+    margin: 8px;
     padding: 10px 20px;
     background-color: #4FD1C5;
     color: #fff;
@@ -17,5 +24,22 @@
 
     &:hover{
         background-color: #1F3B4D;
+        color: orange;
+    }
+}
+
+#problemas{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+    .legend{
+        margin: 5px;
+        font-size: 16px;
+        font-weight: bold;
     }
 }

@@ -42,7 +42,7 @@ a{
     cursor: pointer;
     /* quando passar o mouse */
     &:hover{
-        color: #ffffff;
+        color: #ff7300;
     }
 }
 img{
@@ -116,7 +116,7 @@ main button{
 }
 
 main table {
-    width: 300px;
+    width: 400px;
     border-collapse: collapse;
     padding: 30px;
 }
@@ -127,15 +127,24 @@ main td, th {
     border: 1px solid #ffffff;
     transition: color 0.5s;
     cursor: pointer;
-
-    a:hover{
-        color: #FF6F61;
-    }
 }
 
 main img {
     width: 90%;
     height: auto;
+}
+
+#paginacao{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 20px;
+}
+#paginacao .page-link{
+    padding: 1px;
+    &:hover{
+        color: white;
+    }
 }
 
 footer{
