@@ -1,6 +1,6 @@
 # 🎮 Game Studio - Plataforma de Jogos
 
-<div style="aliyng-center">
+<div style="text-align: center; margin: 20px 0;">
 
 ![Banner do Projeto](img/1.png)
   
