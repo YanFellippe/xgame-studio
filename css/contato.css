@@ -1,45 +1,149 @@
-#formulario{
-    margin: 5px;
-    border-radius: 20px;
-    border: 1px solid black;
-    text-align: center;
-    justify-content: center;
-    
-}
-
-.mb-3{
-    margin: 5px;
-    color: black;
-}
-
-.btn{
-    margin: 8px;
-    padding: 10px 20px;
-    background-color: #4FD1C5;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Estilo Geral do Formulário */
+#formulario, #problemas {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(42, 36, 56, 0.7);
     border-radius: 15px;
-
-    &:hover{
-        background-color: #1F3B4D;
-        color: orange;
-    }
+    border: 1px solid rgba(110, 0, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(110, 0, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
-#problemas{
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin: 10px;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+#formulario:hover, #problemas:hover {
+    box-shadow: 0 15px 40px rgba(110, 0, 255, 0.2);
+    transform: translateY(-5px);
+}
 
-    .legend{
-        margin: 5px;
-        font-size: 16px;
-        font-weight: bold;
+/* Títulos e Labels */
+.form-label, .form-check-label, .legend {
+    color: #f0e6ff;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.legend {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+/* Campos de Input */
+.form-control, .form-select {
+    background-color: rgba(15, 10, 26, 0.7);
+    border: 1px solid #6e00ff;
+    border-radius: 8px;
+    color: #f0e6ff;
+    padding: 12px 15px;
+    width: 90%;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.2);
+    background-color: rgba(15, 10, 26, 0.9);
+}
+
+/* Checkbox */
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: rgba(15, 10, 26, 0.7);
+    border: 1px solid #6e00ff;
+}
+
+.form-check-input:checked {
+    background-color: #6e00ff;
+    border-color: #6e00ff;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(110, 0, 255, 0.3);
+}
+
+/* Texto de Ajuda */
+.form-text {
+    color: rgba(240, 230, 255, 0.6);
+    font-size: 0.85rem;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Botões */
+.btn-primary {
+    background: linear-gradient(135deg, #6e00ff 0%, #ff00aa 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(110, 0, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(110, 0, 255, 0.5);
+}
+
+/* Formulário Desabilitado */
+fieldset[disabled] {
+    opacity: 0.7;
+}
+
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-select,
+fieldset[disabled] .form-check-input {
+    background-color: rgba(42, 36, 56, 0.5);
+    border-color: rgba(110, 0, 255, 0.2);
+    color: rgba(240, 230, 255, 0.5);
+}
+
+fieldset[disabled] .btn-primary {
+    background: linear-gradient(135deg, rgba(110, 0, 255, 0.5) 0%, rgba(255, 0, 170, 0.5) 100%);
+    cursor: not-allowed;
+}
+
+/* Layout dos Formulários */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 5%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #formulario, #problemas {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .legend {
+        font-size: 1.2rem;
+    }
+    
+    .form-control, .form-select {
+        padding: 10px 12px;
+    }
+    
+    .btn-primary {
+        padding: 10px 20px;
     }
 }
