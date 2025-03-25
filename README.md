@@ -1,6 +1,12 @@
 # 🎮 Game Studio - Plataforma de Jogos
 
+<div style="aliyng-center">
+
 ![Banner do Projeto](img/1.png)
+  
+</div>
+
+
 
 Uma plataforma moderna para descobrir, explorar e se conectar com os melhores jogos do mercado. Desenvolvido com paixão por gamers, para gamers.
 
