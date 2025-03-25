@@ -40,7 +40,7 @@ header {
 }
 
 header img {
-    height: 80px;
+    height: 70px;
     filter: drop-shadow(0 0 5px var(--primary));
     transition: transform 0.3s ease;
 }
