@@ -49,3 +49,6 @@ Uma plataforma moderna para descobrir, explorar e se conectar com os melhores jo
 
    cd game-studio
    ```
+
+
+2. teste de commit...
