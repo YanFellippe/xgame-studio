@@ -47,7 +47,7 @@ Uma plataforma moderna para descobrir, explorar e se conectar com os melhores jo
    ```bash
    git clone https://github.com/seu-usuario/game-studio.git
 
-   cd game-studio
+   cd xgame-studio
    ```
 
 
